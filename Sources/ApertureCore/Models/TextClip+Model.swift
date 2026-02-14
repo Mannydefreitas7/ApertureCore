@@ -1,6 +1,8 @@
 import Foundation
 
-/// Text content for text clips
+/// Text content for text clips.
+///
+/// Use this to store the text styling and animation metadata for a `Clip` of type `.text`.
 public struct TextClip: Identifiable {
     public let id: UUID = UUID()
     public var text: String

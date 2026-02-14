@@ -9,6 +9,8 @@ import Foundation
 import AVFoundation
 
 /// A configurable video effect applied during composition.
+///
+/// Effects can be attached to clips to alter the rendered output.
 public struct Effect: EffectProtocol {
 
     /// Effect type used by this model.

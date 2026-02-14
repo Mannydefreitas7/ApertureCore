@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-/// Represents a track in the timeline
+/// Represents a track in the timeline.
 public struct Track: Identifiable {
     public let id: UUID = UUID()
     public var type: TrackType

@@ -13,6 +13,8 @@ import CoreGraphics
 import CoreText
 
 /// Text overlay rendered into a Core Image buffer.
+///
+/// Use text overlays for captions, titles, and other timed text content.
 public struct TextOverlay: OverlayProtocol {
     /// Stable identifier for the overlay.
     public var id: UUID

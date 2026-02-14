@@ -1,7 +1,9 @@
 import Foundation
 import AVFoundation
 
-/// Represents a transition between two clips
+/// Represents a transition between two clips.
+///
+/// Transitions define how one clip blends into the next.
 public struct Transition: TransitionProtocol {
 
     public var id: UUID = UUID()

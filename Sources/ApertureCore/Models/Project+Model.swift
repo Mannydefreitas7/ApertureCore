@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Represents a video editing project with tracks, overlays, and rendering metadata.
 public struct Project: ProjectProtocol {
 
     public var id: UUID
@@ -26,6 +27,8 @@ public struct Project: ProjectProtocol {
 
 }
 /// Represents a global video filter for a project.
+///
+/// Use this to apply a filter across the rendered output.
 public struct VideoFilter: Identifiable {
     public var id: UUID
     public var name: String

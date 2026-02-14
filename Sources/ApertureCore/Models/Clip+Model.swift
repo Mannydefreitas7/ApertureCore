@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-/// Represents a clip on a track
+/// Represents a clip on a track.
 public struct Clip: Identifiable {
     public var id: UUID = UUID()
     public var type: ClipType

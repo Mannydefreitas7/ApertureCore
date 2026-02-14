@@ -8,11 +8,11 @@
 import Foundation
     /// Represents a time range for a clip (in seconds).
     ///
-    /// `ClipTimeRange.start` is the **source media offset** — the point in the source file
-    /// where playback begins.  `ClipTimeRange.duration` is how long the clip plays.
+    /// `TimeRange.start` is the **source media offset** — the point in the source file
+    /// where playback begins. `TimeRange.duration` is how long the clip plays.
     ///
     /// Clips are **sequential on a track**: their timeline position is determined by their
-    /// order in `Track.clips`, not by `start`.  `Track.clip(at:)` walks the array and
+    /// order in `Track.clips`, not by `start`. `Track.clip(at:)` walks the array and
     /// accumulates durations to resolve a timeline time to a clip.
     ///
     /// When building an `AVComposition`, `CompositionBuilder` uses `start` as the read
