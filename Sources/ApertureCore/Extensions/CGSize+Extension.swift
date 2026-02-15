@@ -9,6 +9,12 @@ import CoreGraphics
 
 extension CGSize {
 
+    static func interpolate(from: CGSize, to: CGSize, progress: CGFloat) -> CGSize {
+        CGSize(
+            width: CGFloat.interpolate(from: from.width, to: to.width, progress: progress),
+            height: CGFloat.interpolate(from: from.height, to: to.height, progress: progress)
+        )
+    }
     // MARK: - Canvas Sizes
     public typealias CanvasSize = CGSize
     /// hd720p - width: 1280, height: 720
